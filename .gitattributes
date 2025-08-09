@@ -1,0 +1,2 @@
+microdados_enem_2023.zip filter=lfs diff=lfs merge=lfs -text
+Datasets/MICRODADOS_ENEM_2023.csv filter=lfs diff=lfs merge=lfs -text
