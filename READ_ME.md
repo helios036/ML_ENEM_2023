@@ -30,11 +30,22 @@
 
 #### Além das variaveis contidas no questionário socioeconômico, foram adicionadas variáveis externas, como o Índice de Desenvolvimento Humano (IDH) do município de residência dos participantes e o percentual de uso do programa Bolsa Familia no ano de 2023, para enriquecer a análise.
 
-#### Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest, que ajudou a identificar as variáveis com maior impacto nas notas do ENEM. 
+#### Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest, que ajudou a identificar as variáveis com maior impacto nas notas do ENEM.
 
 #### Estrutura do Repositório
 - `ML_ENEM_GO_2023_XGB.ipynb`: Notebook principal com todo o código e análises.
 - `data/`: Diretório contendo os dados brutos e processados.
+
+#### Análise dos dados
+
+##### A análise dos dados revelou que as variáveis mais significativas para a previsão das notas do ENEM incluem:
+
+- Idade: A idade dos participantes mostrou uma correlação positiva com as notas, indicando que estudantes mais velhos tendem a obter notas mais altas.
+- Escolaridade: A escolaridade dos participantes e de seus pais teve um impacto significativo nas notas, com estudantes cujos pais possuem nível superior apresentando notas mais altas.
+- Localização: A localização geográfica dos participantes também influenciou as notas, com estudantes de áreas urbanas apresentando desempenho superior em comparação com aqueles de áreas rurais.
+- Renda familiar: A renda dos participantes mostrou uma correlação positiva com as notas, indicando que estudantes de famílias com maior renda tendem a obter notas mais altas.
+- Escolaridade dos pais: A escolaridade dos pais também teve um impacto significativo, com estudantes cujos pais possuem nível superior apresentando notas mais altas.
+- Gênero: A análise revelou diferenças de desempenho entre gêneros, com meninas apresentando notas ligeiramente superiores em algumas áreas.
 
 ### Premissas
 
@@ -116,3 +127,6 @@
 
 ### Este modelo de machine learning representa um passo importante na análise das notas do ENEM 2023, fornecendo uma ferramenta valiosa para entender os fatores que influenciam o desempenho dos estudantes. A utilização do XGBoost permite uma análise robusta e eficiente, com potencial para impactar positivamente a educação no estado de Goiás e além.
 
+## Referências
+
+### INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: [INEP ENEM](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem).
