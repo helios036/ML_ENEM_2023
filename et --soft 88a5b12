@@ -1,0 +1,27 @@
+[33me42d728[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m88a5b12[m HEAD@{1}: reset: moving to HEAD
+[33m88a5b12[m HEAD@{2}: reset: moving to HEAD
+[33m88a5b12[m HEAD@{3}: commit: Atualização de texto do readme
+[33me42d728[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{4}: commit: upload imagens modelo
+[33ma1c8a45[m HEAD@{5}: commit: Commit de arquivo para teste
+[33mc22cfbb[m HEAD@{6}: reset: moving to origin/main
+[33mc22cfbb[m HEAD@{7}: reset: moving to origin/main
+[33m9a06196[m HEAD@{8}: commit: Commit inicial do repositorio
+[33m7cc63e0[m HEAD@{9}: reset: moving to HEAD~1
+[33m69b7ae9[m HEAD@{10}: commit: Subindo pasta Imagens
+[33m7cc63e0[m HEAD@{11}: commit: Imagens
+[33mfab745d[m HEAD@{12}: commit: Imagens
+[33mc9e3007[m HEAD@{13}: commit: Remove pasta Datasets do versionamento
+[33m9a650a7[m HEAD@{14}: commit: Remove arquivos grandes do repositório
+[33md0f278c[m HEAD@{15}: commit: Datasets/Renda_per_capita_educação.xlsx
+[33m94df67f[m HEAD@{16}: commit: Adicionando Base de Dados
+[33mc22cfbb[m HEAD@{17}: commit: Atualizações scripts para salvar imagens
+[33mc627eae[m HEAD@{18}: commit: Atualização de textos
+[33m4f4c3bd[m HEAD@{19}: commit: Novas atualizações textuais
+[33ma96bea4[m HEAD@{20}: commit: Exclusão trecho repetido
+[33m36d6f2b[m HEAD@{21}: commit (merge): Merge branch 'main' of https://github.com/helios036/ML_ENEM_2023
+[33md7d5c87[m HEAD@{22}: commit: Atualização readme
+[33mca206d3[m HEAD@{23}: commit (merge): Merge branch 'main' of https://github.com/helios036/ML_ENEM_2023
+[33m5aa5e7b[m HEAD@{24}: reset: moving to HEAD
+[33m5aa5e7b[m HEAD@{25}: commit: Primeiro Readme
+[33m22451bb[m HEAD@{26}: commit (initial): Meu primeiro commit
