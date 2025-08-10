@@ -55,7 +55,6 @@ Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest
 </p>
 
 
-
 ### Delimitação do modelo
 
 <p align="justify">
@@ -63,7 +62,6 @@ O modelo refere-se as notas do ENEM 2023 para o estado de Goiás, com base em da
 </p>
 
 ### Contextualização do problema
-
 
 <p align="justify">
 O Exame Nacional do Ensino Médio (ENEM) é uma das principais formas de avaliação educacional no Brasil, influenciando o acesso ao ensino superior. Compreender os fatores que impactam o desempenho dos estudantes pode ajudar a identificar desigualdades e orientar políticas educacionais.
@@ -74,7 +72,6 @@ Neste contexto, é fundamental analisar como variáveis demográficas e socioeco
 </p>
 
 ### Gerenciamento de dados
-
 
 <p align="justify">
 Os dados utilizados neste projeto foram obtidos do [INEP](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem) e incluem informações detalhadas sobre os participantes do ENEM 2023, como idade, gênero, renda familiar, nível de escolaridade dos pais, entre outros. O pré-processamento dos dados envolveu a limpeza, transformação e seleção das variáveis mais relevantes para a modelagem.
@@ -106,7 +103,9 @@ Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest
 
 #### Análise dos dados
 
-##### A análise dos dados revelou que as variáveis mais significativas para a previsão das notas do ENEM incluem:
+<p align="justify">
+A análise dos dados revelou que as variáveis mais significativas para a previsão das notas do ENEM incluem:
+</p>
 
 <p align="justify">
 - Idade: A idade dos participantes mostrou uma correlação positiva com as notas, indicando que estudantes mais velhos tendem a obter notas mais altas.
@@ -250,9 +249,11 @@ O modelo foi desenvolvido em um ambiente Python, utilizando bibliotecas como Pan
 O modelo foi desenvolvido em um ambiente Python, utilizando bibliotecas como Pandas para manipulação de dados, Scikit-learn para pré-processamento e validação cruzada, e XGBoost para a modelagem. O ambiente de desenvolvimento utilizado foi o Jupyter Notebook.
 </p>
 
-#### Ciclo de processamento de dados:
+### Ciclo de processamento de dados:
 
-##### O ciclo de processamento de dados incluiu as seguintes etapas:
+<p align="justify">
+O ciclo de processamento de dados incluiu as seguintes etapas:
+</p>
 
 <p align="justify">
 1. Coleta de dados: Obtenção dos dados do INEP.
@@ -263,12 +264,11 @@ O modelo foi desenvolvido em um ambiente Python, utilizando bibliotecas como Pan
 6. Interpretação: Análise da importância das variáveis e dos resultados do modelo.
 </p>
 
-##### Armazenamento de dados:
+### Armazenamento de dados:
 
 <p align="justify">
 Os dados foram armazenados em arquivos CSV no diretório `datasets/`, permitindo fácil acesso e manipulação. O modelo treinado e os resultados das previsões também foram salvos em formato pickle para facilitar a reutilização.
 </p>
-
 
 ## Teste de Uso
 
