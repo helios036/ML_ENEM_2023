@@ -179,7 +179,6 @@ O modelo foi testado com um conjunto de dados de validação, onde as previsões
 Espera-se que o modelo forneça insights valiosos sobre os fatores que influenciam as notas do ENEM, ajudando a identificar desigualdades educacionais e orientar políticas públicas. Além disso, o modelo pode ser utilizado por instituições de ensino para melhorar a preparação dos estudantes para o exame.
 </p>
 
-
 ## Monitoração e Manutenção
 
 ### Estratégia de monitoramento
@@ -206,5 +205,5 @@ Este modelo de machine learning representa um passo importante na análise das n
 ## Referências
 
 <p align="justify">
-### INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: [INEP ENEM](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem).
+INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: [INEP ENEM](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem).
 </p>
