@@ -327,14 +327,13 @@ O modelo foi desenvolvido em um ambiente Python, utilizando bibliotecas como Pan
 O ciclo de processamento de dados incluiu as seguintes etapas:
 </p>
 
-<p align="justify">
+
 1. Coleta de dados: Obtenção dos dados do INEP.
 2. Pré-processamento: Limpeza e transformação dos dados, incluindo a normalização e codificação de variáveis categóricas.
 3. Análise exploratória: Visualização e análise estatística das variáveis.
 4. Modelagem: Treinamento do modelo XGBoost utilizando validação cruzada.
 5. Avaliação: Cálculo das métricas de desempenho, como MAE e MAPE.
 6. Interpretação: Análise da importância das variáveis e dos resultados do modelo.
-</p>
 
 ### Armazenamento de dados:
 
@@ -363,8 +362,6 @@ O modelo foi testado com um conjunto de dados de validação, onde as previsões
 <p align="justify">
 Este modelo de machine learning representa um passo importante na análise das notas do ENEM 2023, fornecendo uma ferramenta valiosa para entender os fatores que influenciam o desempenho dos estudantes. A utilização do XGBoost permite uma análise robusta e eficiente, com potencial para impactar positivamente a educação no estado de Goiás e além.
 </p>
-
-### Impactos esperados do modelo
 
 <p align="justify">
 Espera-se que o modelo forneça insights valiosos sobre os fatores que influenciam as notas do ENEM, ajudando a identificar desigualdades educacionais e orientar políticas públicas. Além disso, o modelo pode ser utilizado por instituições de ensino para melhorar a preparação dos estudantes para o exame.
