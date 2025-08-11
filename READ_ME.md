@@ -210,6 +210,13 @@ Os resultados do modelo foram validados utilizando um conjunto de dados de teste
 
 </details>
 
+<details>
+<summary>📊 Métricas resultados </summary>
+
+[📊 Metricas_modelo](Tabelas/metricas_modelo_xgb.xlsx)
+
+</details>
+
 ### Limitações do modelo
 
 <p align="justify">
