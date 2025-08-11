@@ -74,7 +74,7 @@ Neste contexto, é fundamental analisar como variáveis demográficas e socioeco
 ### Gerenciamento de dados
 
 <p align="justify">
-Os dados utilizados neste projeto foram obtidos do [INEP](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem) e incluem informações detalhadas sobre os participantes do ENEM 2023, como idade, gênero, renda familiar, nível de escolaridade dos pais, entre outros. O pré-processamento dos dados envolveu a limpeza, transformação e seleção das variáveis mais relevantes para a modelagem.
+Os dados utilizados neste projeto foram obtidos do [INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem) e incluem informações detalhadas sobre os participantes do ENEM 2023, como idade, gênero, renda familiar, nível de escolaridade dos pais, entre outros. O pré-processamento dos dados envolveu a limpeza, transformação e seleção das variáveis mais relevantes para a modelagem.
 </p>
 
 <p align="justify">
@@ -100,6 +100,20 @@ Além das variaveis contidas no questionário socioeconômico, foram adicionadas
 <p align="justify">
 Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest, que ajudou a identificar as variáveis com maior impacto nas notas do ENEM.
 </p>
+
+<details>
+<summary>📊 Histograma variável target</summary>
+
+![Histograma_variavel_Target](imagens/analise_descritiva/histograma.jpg)
+
+</details>
+
+<details>
+<summary>📊 Correlograma</summary>
+
+![Correlograma](imagens/analise_descritiva/correlograma.jpg)
+
+</details>
 
 #### Análise dos dados
 
@@ -146,7 +160,6 @@ O modelo foi treinado utilizando validação cruzada para garantir a generaliza�
 A técnica de machine learning utilizada é o XGBoost, que é uma implementação eficiente do gradient boosting. Este algoritmo é amplamente utilizado em competições de ciência de dados devido à sua eficácia em tarefas de regressão e classificação.
 </p>
 
-
 ### Fundamentação teórica
 
 <p align="justify">
@@ -217,11 +230,44 @@ O XGBoost é baseado na técnica de boosting, que combina múltiplos modelos fra
 O modelo é representado por um conjunto de árvores de decisão, onde cada árvore contribui para a previsão final. A importância das variáveis é calculada com base na redução do erro que cada variável proporciona ao modelo.
 </p>
 
-
 <p align="justify">
 Conforme apresentado pelos shapley values, as variáveis mais importantes para o modelo incluem a renda familiar, a escolaridade dos pais e o gênero dos participantes. Essas variáveis tiveram um impacto significativo nas previsões das notas do ENEM.
 </p>
 
+<details>
+<summary>📊 Summary-plot </summary>
+
+![Summary_plot](imagens/summary_plot.png)
+
+</details>
+
+<details>
+<summary>📊 Global-plot </summary>
+
+![Global-plot](imagens/global_plot.png)
+
+</details>
+
+<details>
+<summary>📊 Waterfall-plot </summary>
+
+![waterfall-plot](imagens/waterfall_plot.png)
+
+</details>
+
+<details>
+<summary>📊 Violin-plot </summary>
+
+![Violin-plot](imagens/violin_plot.png)
+
+</details>
+
+<details>
+<summary>📊 Scatter-plot-IDHM </summary>
+
+![Scatter-plot-IDHM](imagens/scatter_IDHM_plot.png)
+
+</details>
 
 ### Homologação dos resultados
 
@@ -229,13 +275,11 @@ Conforme apresentado pelos shapley values, as variáveis mais importantes para o
 Os resultados do modelo foram validados utilizando um conjunto de dados de teste separado, garantindo que o modelo não estivesse superajustado aos dados de treinamento. As métricas de desempenho foram comparadas com benchmarks do setor para garantir a confiabilidade dos resultados.
 </p>
 
-
 ### Limitações do modelo
 
 <p align="justify">
 O modelo pode ser limitado pela qualidade e representatividade dos dados utilizados. Além disso, a complexidade do XGBoost pode dificultar a interpretação dos resultados para usuários não familiarizados com técnicas avançadas de machine learning.
 </p>
-
 
 ## Entorno tecnológico
 
@@ -315,6 +359,6 @@ Relatórios periódicos serão gerados para documentar o desempenho do modelo, i
 ## Referências
 
 <p align="justify">
-INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: [INEP ENEM](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem).
+INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: [INEP ENEM](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem).
 </p>
 
