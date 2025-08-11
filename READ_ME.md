@@ -115,6 +115,13 @@ Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest
 
 </details>
 
+<details>
+<summary>📊 Feature importance </summary>
+
+![Feature_importance](imagens/feature_importance.png)
+
+</details>
+
 #### Análise dos dados
 
 <p align="justify">
@@ -181,6 +188,27 @@ Conforme apresentado pelos shapley values, as variáveis mais importantes para o
 <p align="justify">
 Os resultados do modelo foram validados utilizando um conjunto de dados de teste separado, garantindo que o modelo não estivesse superajustado aos dados de treinamento. As métricas de desempenho foram comparadas com benchmarks do setor para garantir a confiabilidade dos resultados.
 </p>
+
+<details>
+<summary>📊 Comparativo histogramas estimação x reais </summary>
+
+![Histogramas comparativos](imagens/histograma_notas_projetadas.png)
+
+</details>
+
+<details>
+<summary>📊 Comparativo estimação x reais </summary>
+
+![Valores previstos x valores reais](imagens/Valores_previstos_valores_reais.png)
+
+</details>
+
+<details>
+<summary>📊 Comparativo valores residuos </summary>
+
+![comparativo residuos projeção](imagens/residuos_projeção.png)
+
+</details>
 
 ### Limitações do modelo
 
