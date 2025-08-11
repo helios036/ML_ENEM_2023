@@ -114,7 +114,7 @@ Neste contexto, é fundamental analisar como variáveis demográficas e socioeco
 <section id="gerenciamento-de-dados-1" class="level3">
 <h3 class="anchored" data-anchor-id="gerenciamento-de-dados-1">Gerenciamento de dados</h3>
 <p align="justify">
-Os dados utilizados neste projeto foram obtidos do <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem">INEP</a> e incluem informações detalhadas sobre os participantes do ENEM 2023, como idade, gênero, renda familiar, nível de escolaridade dos pais, entre outros. O pré-processamento dos dados envolveu a limpeza, transformação e seleção das variáveis mais relevantes para a modelagem.
+Os dados utilizados neste projeto foram obtidos do <a href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem">INEP</a> e incluem informações detalhadas sobre os participantes do ENEM 2023, como idade, gênero, renda familiar, nível de escolaridade dos pais, entre outros. O pré-processamento dos dados envolveu a limpeza, transformação e seleção das variáveis mais relevantes para a modelagem.
 </p>
 <p align="justify">
 Em relação a amostra utilizada foram considerados participantes do ENEM 2023 que residem no estado de Goiás, que estavama presentes em todas as provas do ENEM 2023, incluindo Linguagens e Códigos, Matemática, Ciências Humanas e Ciências da Natureza, que responderam o questionário socioeconômico e que tiveram suas notas divulgadas pelo INEP e que não apresentaram notas zeradas ou faltantes.
@@ -134,6 +134,39 @@ Além das variaveis contidas no questionário socioeconômico, foram adicionadas
 <p align="justify">
 Para selecionar as amostras mais relevantes foi utilizada a técnica SelectKBest, que ajudou a identificar as variáveis com maior impacto nas notas do ENEM.
 </p>
+<details>
+<summary>
+📊 Histograma variável target
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/analise_descritiva/histograma.jpg" class="img-fluid figure-img"></p>
+<figcaption>Histograma_variavel_Target</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Correlograma
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/analise_descritiva/correlograma.jpg" class="img-fluid figure-img"></p>
+<figcaption>Correlograma</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Feature importance
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/feature_importance.png" class="img-fluid figure-img"></p>
+<figcaption>Feature_importance</figcaption>
+</figure>
+</div>
+</details>
 <section id="análise-dos-dados" class="level4">
 <h4 class="anchored" data-anchor-id="análise-dos-dados">Análise dos dados</h4>
 <p align="justify">
@@ -198,6 +231,39 @@ Conforme apresentado pelos shapley values, as variáveis mais importantes para o
 <p align="justify">
 Os resultados do modelo foram validados utilizando um conjunto de dados de teste separado, garantindo que o modelo não estivesse superajustado aos dados de treinamento. As métricas de desempenho foram comparadas com benchmarks do setor para garantir a confiabilidade dos resultados.
 </p>
+<details>
+<summary>
+📊 Comparativo histogramas estimação x reais
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/histograma_notas_projetadas.png" class="img-fluid figure-img"></p>
+<figcaption>Histogramas comparativos</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Comparativo estimação x reais
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/Valores_previstos_valores_reais.png" class="img-fluid figure-img"></p>
+<figcaption>Valores previstos x valores reais</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Comparativo valores residuos
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/residuos_projeção.png" class="img-fluid figure-img"></p>
+<figcaption>comparativo residuos projeção</figcaption>
+</figure>
+</div>
+</details>
 </section>
 <section id="limitações-do-modelo" class="level3">
 <h3 class="anchored" data-anchor-id="limitações-do-modelo">Limitações do modelo</h3>
@@ -246,6 +312,61 @@ O modelo é representado por um conjunto de árvores de decisão, onde cada árv
 <p align="justify">
 Conforme apresentado pelos shapley values, as variáveis mais importantes para o modelo incluem a renda familiar, a escolaridade dos pais e o gênero dos participantes. Essas variáveis tiveram um impacto significativo nas previsões das notas do ENEM.
 </p>
+<details>
+<summary>
+📊 Summary-plot
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/summary_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Summary_plot</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Global-plot
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/global_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Global-plot</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Waterfall-plot
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/waterfall_plot.png" class="img-fluid figure-img"></p>
+<figcaption>waterfall-plot</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Violin-plot
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/violin_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Violin-plot</figcaption>
+</figure>
+</div>
+</details>
+<details>
+<summary>
+📊 Scatter-plot-IDHM
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagens/scatter_IDHM_plot.png" class="img-fluid figure-img"></p>
+<figcaption>Scatter-plot-IDHM</figcaption>
+</figure>
+</div>
+</details>
 </section>
 <section id="homologação-dos-resultados-1" class="level3">
 <h3 class="anchored" data-anchor-id="homologação-dos-resultados-1">Homologação dos resultados</h3>
@@ -276,8 +397,7 @@ O modelo foi desenvolvido em um ambiente Python, utilizando bibliotecas como Pan
 <p align="justify">
 O ciclo de processamento de dados incluiu as seguintes etapas:
 </p>
-<p align="justify">
-</p><ol type="1">
+<ol type="1">
 <li>Coleta de dados: Obtenção dos dados do INEP.</li>
 <li>Pré-processamento: Limpeza e transformação dos dados, incluindo a normalização e codificação de variáveis categóricas.</li>
 <li>Análise exploratória: Visualização e análise estatística das variáveis.</li>
@@ -285,7 +405,6 @@ O ciclo de processamento de dados incluiu as seguintes etapas:
 <li>Avaliação: Cálculo das métricas de desempenho, como MAE e MAPE.</li>
 <li>Interpretação: Análise da importância das variáveis e dos resultados do modelo.</li>
 </ol>
-<p></p>
 </section>
 <section id="armazenamento-de-dados" class="level3">
 <h3 class="anchored" data-anchor-id="armazenamento-de-dados">Armazenamento de dados:</h3>
@@ -313,9 +432,6 @@ O modelo foi testado com um conjunto de dados de validação, onde as previsões
 <p align="justify">
 Este modelo de machine learning representa um passo importante na análise das notas do ENEM 2023, fornecendo uma ferramenta valiosa para entender os fatores que influenciam o desempenho dos estudantes. A utilização do XGBoost permite uma análise robusta e eficiente, com potencial para impactar positivamente a educação no estado de Goiás e além.
 </p>
-</section>
-<section id="impactos-esperados-do-modelo-1" class="level3">
-<h3 class="anchored" data-anchor-id="impactos-esperados-do-modelo-1">Impactos esperados do modelo</h3>
 <p align="justify">
 Espera-se que o modelo forneça insights valiosos sobre os fatores que influenciam as notas do ENEM, ajudando a identificar desigualdades educacionais e orientar políticas públicas. Além disso, o modelo pode ser utilizado por instituições de ensino para melhorar a preparação dos estudantes para o exame.
 </p>
@@ -339,7 +455,7 @@ Relatórios periódicos serão gerados para documentar o desempenho do modelo, i
 <section id="referências" class="level2">
 <h2 class="anchored" data-anchor-id="referências">Referências</h2>
 <p align="justify">
-INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem">INEP ENEM</a>.
+INEP. Exame Nacional do Ensino Médio (ENEM) 2023. Disponível em: <a href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem">INEP ENEM</a>.
 </p>
 </section>
 </section>
